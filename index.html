@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://kit.fontawesome.com/fa52311ad9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Dashboard</title>
+</head>
+
+
+<body class="flex-column min-100-vh">
+    <div class="jumbotron bg-dark text-white text-center">
+        <div class="container">
+            <h1 class="display-1 ">Weather Dashboard</h1>
+        </div>
+    </div>
+
+    <main>
+
+        <section class="container-fluid">
+            <div class='row'>
+                <div class="col-12 col-md-4 col-xl-3">
+                    <div class="card">
+
+                        <!--Search for city and input-->
+                        <h3 class="card-header text-uppercase">Search for city: </h3>
+                        <form id="user-form" class="card-body">
+                            <label class="form-label"></label>
+                            <input placeholder="City" id="search-city" type="text" autofocus="true"
+                                class="form-input" />
+                            <br>
+                            <br>
+                            <button class="btn btn-outline-secondary custom-button" type="button" id="search-button"><i
+                                    class="fa fa-search" aria-hidden="true"></i></button>
+                            <div class="card-body">
+                                <div id="history"></div>
+                            </div>
+                        </form>
+                        <div class="container col-12 col-md-4 col-xl-3"></div>
+
+                    </div>
+                </div>
+
+
+                <!--current weather-->
+
+                <div class="container  col-6 .col-md-4 my-5">
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-xl-9">
+                            <h class='subtitle'>Current Conditions: <div id="weather"></div>
+                                </h2>
+                                <div id="current-weather-container" class='current-list-group'></div>
+                        </div>
+
+
+                    </div>
+
+                    <!--five day weather-->
+                    <div class="col-8-float-right mt-4">
+                        <h2 class="row">Five Day Weather:</h2>
+                        <div id="five-day"></div>
+                        <div id="forecast-container" class="five-day-list-group"></div>
+                    </div>
+
+        </section>
+    </main>
+    <!-- <div class="col-12 col-md-4">
+
+            <div class="card">
+                <h3 class="card-header text-uppercase">Search for a City</h3>
+                <div id="user-form" class="card-body">
+                    <label class="form-label">City</label>
+                    <input id="search-value" type="text" autofocus="true" class="form-input" />
+                    <button class="btn" id="search-btn">Enter</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="card">
+                    <ul class="list-group history" id="history">
+                        <li class="list-group-item">Austin</li>
+                        <li class="list-group-item">Chicago</li>
+                        <li class="list-group-item">Orlando</li>
+                        <li class="list-group-item">San Fransico</li>
+                        <li class="list-group-item">Seattle</li>
+                        <li class="list-group-item">Denver</li>
+                        <li class="list-group-item">Atlanta</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-8">
+            <div id="today" class="mt-3"> </div>
+            <div id="forecast" class="row mt-3"></div>
+        </div> -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</body>
+</html>

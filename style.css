@@ -1,0 +1,116 @@
+:root {
+    --primary: #ffffff;
+    --secondary: #00a8e8;
+    --tertiary: #e9f7fc;
+    --light-dark: #003459;
+    --dark: #00171f;
+    --border-radius: .3rem;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--dark);
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    margin: 0;
+    color: var(--dark);
+    line-height: 1.25;
+  }
+  
+  .hero {
+    padding: 3% 4%;
+    background-color: var(--light-dark);
+    text-align: center;
+  }
+  .hero h1 {
+    color: var(--primary);
+  }
+  
+  main {
+    margin: 20px auto;
+    width: 94%;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+  
+  .btn {
+    font-size: 1rem;
+    text-decoration:none;
+    padding: 6px 5px;
+    width: 50%;
+    display: block;
+    margin: 5px 0;
+    border-radius: var(--border-radius);
+    color: var(--tertiary);
+    border: none;
+    outline: none;
+    background-color: var(--light-dark);
+  }
+  
+  #history {
+    background-color: var(--tertiary);
+  }
+  ul {
+    text-decoration: none;
+    list-style: none;
+  }
+  .list-group-item{
+    font-size: 1rem;
+    text-decoration:none;
+    padding: 6px 5px;
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    border-radius: var(--border-radius);
+    color: var(--light-dark);
+    border: none;
+    outline: none;
+    background-color: var(--primary);
+    transform: translate(-1px, -1px);
+  }
+  
+  .list-group-item:hover {
+    color: var(--primary);
+    background-color: var(--light-dark);
+    transform: translate(0, 0);
+  }
+  
+  .list-group-item-back {
+    border-radius: var(--border-radius);
+    color: var(--primary);
+    border: none;
+    outline: none;
+    background-color: var(--light-dark);
+    transform: translate(-1px, -1px);
+    display: inline-block;
+    width: auto;
+    margin-top: 20px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .list-group-item-back:hover {
+    color: var(--primary);
+    background-color: var(--tertiary);
+    transform: translate(0, 0);
+    box-shadow: 2px 2px var(--dark);
+  }
