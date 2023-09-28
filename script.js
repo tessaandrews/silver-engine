@@ -3,12 +3,13 @@ var forecastContainer = document.getElementById('five-day');
 var historyContainer = document.getElementById('history');
 
 var searchButton = document.getElementById('search-button');
-var APIkey = '52295644386b9059a3d034279446c259';
+var APIkey = '61e9d1fdd4bef0d4dad4154730927398';
 
 
 function getApi() {
   var searchValue = document.getElementById('search-city').value;
-  var requestUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=${APIkey}&units=imperial`;
+  var requestUrl= 'http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={61e9d1fdd4bef0d4dad4154730927398}'
+  //var requestUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=${APIkey}&units=imperial`;//
 
   fetch(requestUrl)
     .then(function (response) {

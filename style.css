@@ -1,9 +1,9 @@
 :root {
     --primary: #ffffff;
-    --secondary: #00a8e8;
+    --secondary: #2816ec;
     --tertiary: #e9f7fc;
-    --light-dark: #003459;
-    --dark: #00171f;
+    --light-dark: #5b3ac5;
+    --dark: #000000;
     --border-radius: .3rem;
   }
   
@@ -35,7 +35,6 @@
   
   .hero {
     padding: 3% 4%;
-    background-color: var(--light-dark);
     text-align: center;
   }
   .hero h1 {
